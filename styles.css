@@ -1,64 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-body{
+
+body {
     text-align: justify;
     font-family: "Playfair Display", serif;
     background-color: #d6eaf8;
 }
-header{
-    
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #33c4ff;
     color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    width: 100%;
-    
-    
-      
 }
+
+.encabezado {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+nav {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
 nav ul {
-    list-style-type: none; /* Quitamos las viñetas de la lista */
+
+    list-style-type: none;
+    /* Quitamos las viñetas de la lista */
     display: flex;
     align-items: flex-end;
 }
-nav li {
-    
-    margin-right: 20px; 
-    
-    
+
+nav ul li {
+
+    list-style: none;
+    margin-right: 30px;
 }
-a{
+
+a {
     text-decoration: none;
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
 }
-main{
+
+main {
     margin: 20px;
 }
-h2{
+
+h2 {
     color: #33afff;
 }
-h3{
+
+h3 {
     color: #9585ef;
 }
+
+.titulo_org {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .grid {
     background-color: #aed6f1;
     padding: 2%;
     color: #1b4f72;
 }
+
 .imagen {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: 70px;
 }
 
-footer{
+iframe {
+    margin-right: 20px;
+}
+
+footer {
     background-color: #9585ef;
     color: black;
     padding: 2%;
 }
 
+/* VISTA MOBILE */
+
+@media (max-width: 767px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .encabezado {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .imagen {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+}

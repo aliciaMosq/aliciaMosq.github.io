@@ -7,3 +7,4 @@ function muestra_oculta(id){
         div.style.display = "none";
     }
 }
+

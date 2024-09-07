@@ -11,25 +11,20 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="imagenesP/logo.png" alt="LogoAutismo" width="200px" height="150px">
+    <header>
+        <div class="encabezado">
+            <img src="imagenesP/logo.png" alt="LogoAutismo" width="200px" height="150px">
 
-            </div>
-            <div class="col-md-6">
-                <nav class="navbar navbar-expand-sm">
-
-                    <ul>
-                        <li><a href="#div1">Tipos de autismo</a></li>
-                        <li><a href="#div2">Causas</a></li>
-                        <li><a href="#div3">Síntomas</a></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#div1">Tipos de autismo</a></li>
+                <li><a href="#div2">Causas</a></li>
+                <li><a href="#div3">Síntomas</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="container-fluid">
+    <main>
         <div>
             <h1>¿Qué es el Autismo?</h1>
             <p>El autismo, o trastorno del espectro autista (TEA), se refiere a una amplia gama de condiciones
@@ -37,53 +32,60 @@
                 el habla y la comunicación no verbal. Según los Centros para el Control y la Prevención de Enfermedades
                 (CDC, Centers for Disease Control), el autismo afecta actualmente a 1 de cada 36 niños y niñas y
                 1 de cada 45 personas adultas en Estados Unidos.</p>
-            
+
         </div>
         <div class="grid">
             <div class="row">
                 <div class="col-md-6">
-                    <b><p>Los trastornos del espectro autista (TEA) son un grupo de afecciones diversas. Se caracterizan por
-                        algún grado de dificultad en la interacción social y la comunicación. Otras características que
-                        presentan son patrones atípicos de actividad y comportamiento; por ejemplo, dificultad para pasar
-                        de una actividad a otra, gran atención a los detalles y reacciones poco habituales a las sensaciones.
-                    </p></b>
+                    <b>
+                        <p>Los trastornos del espectro autista (TEA) son un grupo de afecciones diversas. Se
+                            caracterizan por
+                            algún grado de dificultad en la interacción social y la comunicación. Otras características
+                            que
+                            presentan son patrones atípicos de actividad y comportamiento; por ejemplo, dificultad para
+                            pasar
+                            de una actividad a otra, gran atención a los detalles y reacciones poco habituales a las
+                            sensaciones.
+                        </p>
+                    </b>
                 </div>
                 <div class="col-md-6">
                     <center>
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imagenesP/simboloAutismo.webp" class="d-block w-50" alt="Símbolo de autismo">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./imagenesP/simboloAutismo.webp" class="d-block w-50"
+                                        alt="Símbolo de autismo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagenesP/autismo.png" class="d-block w-50" alt="Autismo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagenesP/ninAutismo.webp" class="d-block w-50" alt="Niño con autismo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagenesP/neurodiverso.png" class="d-block w-40" alt="Neurodiverso">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./imagenesP/autismo.png" class="d-block w-50" alt="Autismo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenesP/ninAutismo.webp" class="d-block w-50" alt="Niño con autismo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenesP/neurodiverso.png" class="d-block w-40" alt="Neurodiverso">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Siguiente</span>
-                    </button>
-                </div>
-                </center>
+                    </center>
 
                 </div>
 
             </div>
         </div>
-        
-        
+
+
 
         <div id="div1">
             <h1>Tipos de autismo</h1>
@@ -133,20 +135,19 @@
                 son demasiado heterogéneos como para ser incluidos en alguno de los otros tipos.
                 También se presentan trastornos de reciprocidad social, problemas severos de comunicación y
                 la existencia de intereses y actividades peculiares, restringidas y estereotipadas. </p>
-                <div class="imagenesAutismo">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="imagen" src="imagenesP/arbol.png" alt="arbol autismo">
-                        </div>
-                        <div class="col-md-4">
-                            <img class="imagen" src="imagenesP/armado.jpg" alt="arbol autismo">
-                        </div>
-                        <div class="col-md-4">
-                            <img class="imagen" src="imagenesP/tiposAutismo.jpg" alt="arbol autismo">
-                        </div>
-                    </div>
-                    
+
+        </div>
+
+        <div class="imagenesAutismo">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="imagen" src="imagenesP/arbol.png" alt="arbol autismo">
                 </div>
+                <div class="col-md-6">
+                    <img class="imagen" src="imagenesP/tiposAutismo.jpg" alt="arbol autismo">
+                </div>
+            </div>
+
         </div>
         <div id="div2">
             <h1>Causas</h1>
@@ -189,15 +190,17 @@
                 <li>Insistencia irracional en el seguimiento de rutinas.</li>
             </ol>
         </div>
-        <div class="text-center" >
+        <div class="text-center">
             <a href="extra.html">
                 <button type="button" class="btn btn-outline-info">Contenidos adicionales</button>
-        </a>
+            </a>
         </div>
-        
+
     </main>
-    <footer class="container-fluid">
-        <b><p>Derechos reservados Autismo 2024</p></b>
+    <footer>
+        <center><b>
+            <p>Derechos reservados Autismo 2024</p>
+        </b></center>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
